@@ -194,7 +194,7 @@ def sep_merge(path1, path2, thresh1, thresh2, granular = False):
 	satisfied_1 = False
 
 	
-	img2 = IJ.openImage(path1)
+	img2 = IJ.openImage(path2)
 	width2,height2 = img1.getWidth(), img1.getHeight()
 	img2_output = IJ.createImage("T_image", "16-bit", width2, height2, 1)
 	img2_output = img2_output.getProcessor()
@@ -394,6 +394,7 @@ def direc_merge(direc1, direc2, granular = False):
 
 path1 = str(inputdirec1)
 path2 = str(inputdirec2)
+
 
 parent = parent_path(path1)
 clean_direc(parent)
