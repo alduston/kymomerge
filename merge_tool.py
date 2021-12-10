@@ -406,3 +406,4 @@ copy_path2 = path2+'copy/'
 
 direc_merge(copy_path1, copy_path2, granular = True)	
 clean_direc(parent, final = True)
+
